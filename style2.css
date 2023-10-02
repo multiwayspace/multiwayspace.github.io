@@ -1,0 +1,111 @@
+/* === IMPORTS === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* === GLOBAL VARIABLES === */
+:root {
+    --blue: rgb(0, 56, 147);
+    --red: rgb(220, 20, 60);
+    --orange: rgb(255, 103, 31);
+    --green: rgb(4, 106, 56);
+    --deep-blue: rgb(6, 3, 141);
+}
+
+/* === GLOBAL STYLES === */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* === BANNER STYLES === */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue);
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    background: -webkit-linear-gradient(left, var(--red), var(--orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+/* === CONTENT CONTAINER STYLES === */
+.container {
+    padding-top: 80px; 
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(4, 106, 56, 0.5); 
+    border-radius: 15px;
+}
+
+/* === COMING SOON STYLES === */
+.coming-soon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 10px 20px;
+    border: 2px solid var(--deep-blue);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.coming-soon-text {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.coming-soon-text::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 3px;
+    width: 60%;
+    background: linear-gradient(to right, var(--orange), var(--red));
+    align-self: center;
+}
+
+/* === BOTTOM BANNER STYLES === */
+.bottom-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(6, 3, 141, 0.7);
+    padding: 5px;
+    z-index: 1000;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,160 @@
+/* === GLOBAL STYLES === */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('wall-temple.jpeg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* === BANNER STYLES === */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 56, 200, 0.3);
+    /* background-color: rgba(200, 16, 46, 0.3); */
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ... other styles ... */
+
+/* === CHARACTER AND COMING SOON CONTAINER STYLES === */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.characters-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.character {
+    flex: 1; /* Ensures that both characters take equal width */
+    flex-grow: 1;
+    max-width: 40%;
+    margin: 0 1rem;
+    /* To ensure that images keep their aspect ratio, you can use: */
+    width: auto;
+    height: 20vw; /* Adjust this based on desired size, this means the height will be 20% of viewport width */
+}
+.downloads {
+    flex:1;
+}
+
+/* === COMING SOON STYLES === */
+.coming-soon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.coming-soon-text {
+    font-size: 2vw; /* This means the font will scale with 2% of the viewport width */
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+/* ... other styles ... */
+
+/* === CONTAINER STYLES === */
+.container {
+    margin-top: 100px;
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.store-logos {
+    display: flex;
+    justify-content: center; /* Align logos horizontally to the center */
+    margin-bottom: 20px; /* Spacing between logos and 'Coming Soon' text */
+}
+
+.store-button {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px 20px; /* Padding around the logo */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 0 10px; /* Spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.store-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}
+
+.store-logo {
+    height: 30px; /* Adjust based on desired size */
+}
+
+.logo {
+    height: 40px;   /* Adjust based on the size you want */
+    margin-right: 10px;  /* Some spacing between the logo and the title */
+}
+
+.coming-soon-text::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 3px;
+    width: 60%;
+    background: linear-gradient(to right, #ff4500, #ff8c00);
+    align-self: center;
+}
+
+/* === OTHER STYLES === */
+.last-desc {
+    font-size: 1rem;
+    margin-top: 0px;
+    color: rgb(200,16,46);
+}
+
+.nepali-sathi {
+    font-size: 4rem;
+    color: rgb(255,103,31);
+    margin-bottom: 0px;
+}
